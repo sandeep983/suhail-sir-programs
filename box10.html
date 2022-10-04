@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas: 
+                "first second"
+                "first third";
+            border: 5px solid black;
+            height: 400px;
+            width: fill;
+        }
+        .first{
+            grid-area: first;
+            border: 0;
+            background-color: red;
+            height: 100%;
+            width: 50%;
+        }
+        .second{
+            grid-area: second;
+            border: 0;
+            background-color: blue;
+            width: 50%;
+        }
+        .third{
+            grid-area: third;
+            border: 0;
+            background-color: green;
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+</body>
+</html>
