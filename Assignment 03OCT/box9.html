@@ -3,37 +3,28 @@
 <head>
     <title>Document</title>
     <style>
-        div{    
-            display: flex;
-            border: 5px solid black;
-            height: 400px;
-            width: fill;
+        #container{      
+            border: 2px solid black;
+            overflow: auto;
         }
-        #first{
-            border: 0;
+        #f{
+            float: left;
             background-color: red;
-            height: 100%;
+            height: 100px;
             width: 50%;
         }
-        #second{
-            border: 0;
-            background-color: blue;
-            height: 100%;
-            width: 50%;
-        }
-        #third{
-            border: 0;
+        #s{
+            float: right;
             background-color: green;
-            height: 100%;
+            height: 100px;
             width: 50%;
         }
     </style>
 </head>
 <body>
-    <div>
-        <div id="first"></div> 
-        <div id="second"></div>
-        <div id="third"></div>
+    <div id="container">
+        <div id="f"></div> 
+        <div id="s"></div>
     </div>
 </body>
 </html>
